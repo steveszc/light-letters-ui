@@ -1,0 +1,8 @@
+<h1>{{model.bible.title}}</h1>
+<img src={{model.bible.imageUrl}} alt={{concat 'Cover of ' model.bible.bible}} width="50">
+<p>{{model.bible.description}}</p>
+<ul>
+{{#each model.toc.books as |book|}}
+  <li>{{link-to book.passage 'bible.book' book.passage}}</li>
+{{/each}}
+</ul>

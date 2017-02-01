@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:bible/book/chapter/verses', 'Unit | Route | bible/book/chapter/verses', {
+moduleFor('route:bible/book/index', 'Unit | Route | bible/book/index', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
