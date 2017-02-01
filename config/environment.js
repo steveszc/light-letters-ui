@@ -20,7 +20,8 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    biblia_key: 'fd37d8f28e95d3be8cb4fbc37e15e18e'
   };
 
   if (environment === 'development') {

@@ -7,6 +7,18 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('bibles');
+  this.route('bible', { path: '/:bible' }, function() {
+    this.route('books');
+    this.route('book', { path: '/:book' }, function() {
+      this.route('chapters');
+      this.route('chapter', { path: '/:chapter' }, function() {
+        this.route('verses');
+        this.route('verse', { path: '/:verse' });
+      });
+    });
+  });
+  this.route('not-found', { path: '/*path' });
 });
 
 export default Router;

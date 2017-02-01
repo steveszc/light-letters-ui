@@ -1,0 +1,7 @@
+<h2>{{model.passage}}</h2>
+<ul>
+{{#each model.chapters as |chapter i|}}
+  <li>{{link-to chapter.passage 'bible.book.chapter' (inc i)}}</li>
+{{/each}}
+</ul>
+{{outlet}}
