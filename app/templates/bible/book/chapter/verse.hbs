@@ -1,2 +1,7 @@
-{{model.verse}}
-{{outlet}}
+{{#link-to 'bible.book.chapter'}}
+  {{model.verse}}
+{{/link-to}}
+
+<div class="">
+  {{{model.text}}}
+</div>

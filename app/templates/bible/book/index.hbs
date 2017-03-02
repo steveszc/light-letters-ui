@@ -1,6 +1,10 @@
 <ul>
-{{#each model.chapters as |chapter i|}}
-  <li>{{link-to chapter.passage 'bible.book.chapter' (inc i)}}</li>
-{{/each}}
+  {{#each model.chapters as |chapter|}}
+    <li>
+      {{#link-to 'bible.book.chapter' chapter.chapter}}
+        Chapter {{chapter.chapter}}
+      {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
 {{outlet}}

@@ -1,9 +1,4 @@
-<div class="">
-  {{link-to '< Chapters' 'bible.book'}}
-</div>
-
-<div class="">
-  <p>{{model.text}}</p>
-</div>
-
+{{#link-to 'bible.book'}}
+  {{model.chapter}}
+{{/link-to}}
 {{outlet}}

@@ -1,5 +1,4 @@
-<div class="">
-  {{link-to '< Books' 'bible'}}
-</div>
-<h2>{{model.passage}}</h2>
+{{#link-to 'bible'}}
+  {{model.name}}
+{{/link-to}}
 {{outlet}}
