@@ -5,6 +5,17 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
+    'esw-cache-fallback': {
+      patterns: ['/api/(.+)'],
+    },
+    'inlineContent': {
+      'inline-css': {
+        file:'app/styles/app.css',
+        postProcess: function(content) {
+          return content.replace(/\r?\n|\r/g, '');
+        }
+      }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
