@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.logo {
+  display: inline-block;
+  padding: .25em 0 .25em 1.75em;
+  margin: 0;
+  text-transform: lowercase;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03Myw4SDI3Yy01LjUsMC0xMCw0LjUtMTAsMTB2NjRjMCw1LjUsNC41LDEwLDEwLDEwaDQ2YzUuNSwwLDEwLTQuNSwxMC0xMFYxOEM4MywxMi41LDc4LjUsOCw3Myw4eiBNNzksODIgICBjMCwzLjMtMi43LDYtNiw2SDI3Yy0zLjMsMC02LTIuNy02LTZWMThjMC0zLjMsMi43LTYsNi02aDQ2YzMuMywwLDYsMi43LDYsNlY4MnoiLz48cGF0aCBkPSJNMzIsNTNjLTEuMSwwLTIsMC45LTIsMnMwLjksMiwyLDJoMjBjMS4xLDAsMi0wLjksMi0ycy0wLjktMi0yLTJIMzJ6Ii8+PHBhdGggZD0iTTY4LDY0SDMyYy0xLjEsMC0yLDAuOS0yLDJzMC45LDIsMiwyaDM2YzEuMSwwLDItMC45LDItMlM2OS4xLDY0LDY4LDY0eiIvPjxwYXRoIGQ9Ik01Miw3NUgzMmMtMS4xLDAtMiwwLjktMiwyczAuOSwyLDIsMmgyMGMxLjEsMCwyLTAuOSwyLTJTNTMuMSw3NSw1Miw3NXoiLz48cGF0aCBkPSJNMzkuNiw0My45YzAuNCwwLjQsMC45LDAuNiwxLjQsMC42czEtMC4yLDEuNC0wLjZsOC4xLTguMWMxLjQtMS40LDIuMi0zLjQsMi4yLTUuNGMwLTItMC44LTQtMi4yLTUuNCAgIGMtMi42LTIuNi02LjUtMi45LTkuNS0xLjFjLTEuMi0wLjgtMi42LTEuMi00LjEtMS4yYy0yLDAtNCwwLjgtNS40LDIuMmMtMywzLTMsNy44LDAsMTAuOEwzOS42LDQzLjl6IE0zNC4zLDI3LjggICBjMC43LTAuNywxLjYtMS4xLDIuNi0xLjFzMS45LDAuNCwyLjYsMS4xbDAuMSwwLjFjMC44LDAuOCwyLDAuOCwyLjgsMGwwLjEtMC4xYzEuNC0xLjQsMy43LTEuNCw1LjEsMGMwLjcsMC43LDEuMSwxLjYsMS4xLDIuNiAgIHMtMC40LDEuOS0xLjEsMi42TDQxLDM5LjZMMzQuMywzM0MzMi45LDMxLjUsMzIuOSwyOS4yLDM0LjMsMjcuOHoiLz48L2c+PC9zdmc+);
+}
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dotted #f6f6f6;
+  transition: border-color 300ms;
+}
+.logo a:hover,
+.logo a:focus {
+  border-bottom: 1px dotted #454545;
+}
+.header {
+  text-align: center;
+  margin: 0;
+  padding: .5em 0;
+  background: #f6f6f6;
+}
+
+.page {
+  max-width: 32em;
+  width: 100%;
+  margin: 1em auto;
+  padding: 0 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page .content{
+  flex-basis: 100%;
+}
+
+.nav {
+  border: 2px solid #dcdcdc;
+  text-decoration: none;
+  padding: .25em .5em;
+  min-width: 2.5em;
+  text-align: center;
+  color: #767676;
+  transition: border-color 300ms;
+}
+.nav:hover {
+  border-color: #bbbbbb;
+}
+.nav:hover + .nav {
+  border-left-color: #bbbbbb;
+}
+.nav:first-of-type {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.nav:not(:last-of-type) {
+  border-right-width: 0px;
+}
+.nav:last-of-type {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.content--bibles,
+.content--books,
+.content--chapters {
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.5em;
+}
+.content--chapter .p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: serif;
+}
+
+.content--chapter .p sup {
+  font-size: .5em;
+}
+
+.content--verse .p {
+  font-size: 2em;
+  font-family: serif;
+}
+
+.content--verse .p sup {
+  display: none;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.6em;
+}
+sub {
+  top: 0.75em;
+}
