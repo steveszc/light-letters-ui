@@ -1,8 +1,8 @@
 <ul class="content content--chapters">
   {{#each model.chapters as |chapter|}}
-    <li>
+    <li class="choice choice--chapter">
       {{#link-to 'bible.book.chapter' chapter.chapter}}
-        Chapter {{chapter.chapter}}
+        {{chapter.chapter}}
       {{/link-to}}
     </li>
   {{/each}}

@@ -1,7 +1,14 @@
 <ul class="content content--bibles">
-{{#each model as |bible|}}
-  <li>{{link-to bible.name "bible" bible.id}}</li>
+{{#each model.versions as |bible|}}
+  <li class="choice choice--bible">
+    {{#link-to "bible" bible.id}}
+      <span>{{bible.abbreviation}}</span>
+      <span class="choice-sub">{{bible.name}}</span>
+    {{/link-to}}
+  </li>
 {{/each}}
 </ul>
 
 {{outlet}}
+
+{{{model.meta.fums_noscript}}}
