@@ -26,7 +26,7 @@
     <meta name="msapplication-TileImage" content="{{rootURL}}ms-icon-144x144.png">
     <meta name="theme-color" content="#f6f6f6">
 
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="{{rootURL}}manifest.json">
 
     <!-- <link rel="stylesheet" href="{{rootURL}}assets/vendor.css"> -->
     <!-- <link rel="stylesheet" href="{{rootURL}}assets/light-letters.css"> -->
@@ -37,8 +37,7 @@
   <body>
     {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/light-letters.js"></script>
+    <script async src="{{rootURL}}assets/app.js"></script>
 
     {{content-for "body-footer"}}
   </body>

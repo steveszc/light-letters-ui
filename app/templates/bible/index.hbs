@@ -1,5 +1,9 @@
+{{#each model.testaments as |testament|}}
 <ul class="content content--books">
-{{#each model.books as |book|}}
-  <li>{{link-to book.name 'bible.book' book.abbr}}</li>
-{{/each}}
+  {{#each (filter-by 'testament' testament model.books) as |book|}}
+    <li class="choice choice--book">
+      {{link-to book.name 'bible.book' book.abbr}}
+    </li>
+  {{/each}}
 </ul>
+{{/each}}

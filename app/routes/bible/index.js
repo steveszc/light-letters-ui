@@ -7,6 +7,7 @@ export default Ember.Route.extend({
 
     return Ember.RSVP.hash({
       bible: this.modelFor('bible'),
+      testaments: ['OT', 'DEUT', 'NT'],
       books: fetch(url)
         .then(response => response.json()
         .then(json => json.response.books))

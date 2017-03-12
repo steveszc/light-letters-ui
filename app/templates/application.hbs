@@ -1,5 +1,11 @@
-<header class="header">
-  <h1 class="logo">{{link-to 'Light Letters' 'index'}}</h1>
+<header class="header {{if (eq currentPath 'index') 'header--index' 'header--page'}}">
+  <h1 class="logo">
+    {{#link-to 'index'}}
+    <span class={{if (not-eq currentPath 'index') 'visually-hidden'}}>
+      Light Letters
+    </span>
+    {{/link-to}}
+  </h1>
 </header>
 
 <main class="page">

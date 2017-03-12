@@ -11,6 +11,25 @@ body {
   font-family: sans-serif;
 }
 .logo {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03Myw4SDI3Yy01LjUsMC0xMCw0LjUtMTAsMTB2NjRjMCw1LjUsNC41LDEwLDEwLDEwaDQ2YzUuNSwwLDEwLTQuNSwxMC0xMFYxOEM4MywxMi41LDc4LjUsOCw3Myw4eiBNNzksODIgICBjMCwzLjMtMi43LDYtNiw2SDI3Yy0zLjMsMC02LTIuNy02LTZWMThjMC0zLjMsMi43LTYsNi02aDQ2YzMuMywwLDYsMi43LDYsNlY4MnoiLz48cGF0aCBkPSJNMzIsNTNjLTEuMSwwLTIsMC45LTIsMnMwLjksMiwyLDJoMjBjMS4xLDAsMi0wLjksMi0ycy0wLjktMi0yLTJIMzJ6Ii8+PHBhdGggZD0iTTY4LDY0SDMyYy0xLjEsMC0yLDAuOS0yLDJzMC45LDIsMiwyaDM2YzEuMSwwLDItMC45LDItMlM2OS4xLDY0LDY4LDY0eiIvPjxwYXRoIGQ9Ik01Miw3NUgzMmMtMS4xLDAtMiwwLjktMiwyczAuOSwyLDIsMmgyMGMxLjEsMCwyLTAuOSwyLTJTNTMuMSw3NSw1Miw3NXoiLz48cGF0aCBkPSJNMzkuNiw0My45YzAuNCwwLjQsMC45LDAuNiwxLjQsMC42czEtMC4yLDEuNC0wLjZsOC4xLTguMWMxLjQtMS40LDIuMi0zLjQsMi4yLTUuNGMwLTItMC44LTQtMi4yLTUuNCAgIGMtMi42LTIuNi02LjUtMi45LTkuNS0xLjFjLTEuMi0wLjgtMi42LTEuMi00LjEtMS4yYy0yLDAtNCwwLjgtNS40LDIuMmMtMywzLTMsNy44LDAsMTAuOEwzOS42LDQzLjl6IE0zNC4zLDI3LjggICBjMC43LTAuNywxLjYtMS4xLDIuNi0xLjFzMS45LDAuNCwyLjYsMS4xbDAuMSwwLjFjMC44LDAuOCwyLDAuOCwyLjgsMGwwLjEtMC4xYzEuNC0xLjQsMy43LTEuNCw1LjEsMGMwLjcsMC43LDEuMSwxLjYsMS4xLDIuNiAgIHMtMC40LDEuOS0xLjEsMi42TDQxLDM5LjZMMzQuMywzM0MzMi45LDMxLjUsMzIuOSwyOS4yLDM0LjMsMjcuOHoiLz48L2c+PC9zdmc+);
+  background-repeat: no-repeat;
+}
+.header--page .logo {
+  opacity: .25;
+  background-size: 1.25em;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 8px;
+}
+.header--page .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header--index .logo {
   display: inline-block;
   padding: .25em 0 .25em 1.75em;
   margin: 0;
@@ -19,9 +38,7 @@ body {
   font-size: 1em;
   font-weight: 200;
   letter-spacing: 2px;
-  background-repeat: no-repeat;
   background-size: 1.5em;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03Myw4SDI3Yy01LjUsMC0xMCw0LjUtMTAsMTB2NjRjMCw1LjUsNC41LDEwLDEwLDEwaDQ2YzUuNSwwLDEwLTQuNSwxMC0xMFYxOEM4MywxMi41LDc4LjUsOCw3Myw4eiBNNzksODIgICBjMCwzLjMtMi43LDYtNiw2SDI3Yy0zLjMsMC02LTIuNy02LTZWMThjMC0zLjMsMi43LTYsNi02aDQ2YzMuMywwLDYsMi43LDYsNlY4MnoiLz48cGF0aCBkPSJNMzIsNTNjLTEuMSwwLTIsMC45LTIsMnMwLjksMiwyLDJoMjBjMS4xLDAsMi0wLjksMi0ycy0wLjktMi0yLTJIMzJ6Ii8+PHBhdGggZD0iTTY4LDY0SDMyYy0xLjEsMC0yLDAuOS0yLDJzMC45LDIsMiwyaDM2YzEuMSwwLDItMC45LDItMlM2OS4xLDY0LDY4LDY0eiIvPjxwYXRoIGQ9Ik01Miw3NUgzMmMtMS4xLDAtMiwwLjktMiwyczAuOSwyLDIsMmgyMGMxLjEsMCwyLTAuOSwyLTJTNTMuMSw3NSw1Miw3NXoiLz48cGF0aCBkPSJNMzkuNiw0My45YzAuNCwwLjQsMC45LDAuNiwxLjQsMC42czEtMC4yLDEuNC0wLjZsOC4xLTguMWMxLjQtMS40LDIuMi0zLjQsMi4yLTUuNGMwLTItMC44LTQtMi4yLTUuNCAgIGMtMi42LTIuNi02LjUtMi45LTkuNS0xLjFjLTEuMi0wLjgtMi42LTEuMi00LjEtMS4yYy0yLDAtNCwwLjgtNS40LDIuMmMtMywzLTMsNy44LDAsMTAuOEwzOS42LDQzLjl6IE0zNC4zLDI3LjggICBjMC43LTAuNywxLjYtMS4xLDIuNi0xLjFzMS45LDAuNCwyLjYsMS4xbDAuMSwwLjFjMC44LDAuOCwyLDAuOCwyLjgsMGwwLjEtMC4xYzEuNC0xLjQsMy43LTEuNCw1LjEsMGMwLjcsMC43LDEuMSwxLjYsMS4xLDIuNiAgIHMtMC40LDEuOS0xLjEsMi42TDQxLDM5LjZMMzQuMywzM0MzMi45LDMxLjUsMzIuOSwyOS4yLDM0LjMsMjcuOHoiLz48L2c+PC9zdmc+);
 }
 .logo a {
   text-decoration: none;
@@ -33,7 +50,7 @@ body {
 .logo a:focus {
   border-bottom: 1px dotted #454545;
 }
-.header {
+.header--index {
   text-align: center;
   margin: 0;
   padding: .5em 0;
@@ -41,10 +58,10 @@ body {
 }
 
 .page {
-  max-width: 32em;
+  max-width: 32rem;
   width: 100%;
   margin: 1em auto;
-  padding: 0 2em;
+  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -52,6 +69,12 @@ body {
 
 .page .content{
   flex-basis: 100%;
+}
+
+.page p,
+.page p + a {
+  width: 100%;
+  text-align: center;
 }
 
 .nav {
@@ -85,26 +108,110 @@ body {
 .content--books,
 .content--chapters {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
   line-height: 1.5em;
 }
-.content--chapter .p {
+
+.content--books,
+.content--chapters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.content--bibles {
+  margin-top: 3rem;
+}
+
+.choice--bible,
+.choice--book,
+.choice--chapter {
+  flex: 0 1 auto;
+  border: 1px solid #fff;
+}
+
+.choice--bible {
+  width: 100%;
+  height: 3rem;
+  border: 2px solid #fff;
+}
+
+.choice--book {
+  width: 8rem;
+  height: 8rem;
+}
+
+.choice--chapter {
+  width: 5rem;
+  height: 5rem;
+}
+
+.choice--bible a,
+.choice--book a,
+.choice--chapter a {
+  color: #454545;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+}
+.choice--bible a {
+  justify-content: space-between;
+}
+.choice--bible a span {
+  padding: 0 1em;
+  line-height: 1.25em;
+}
+
+.choice--bible a:hover, .choice--bible a:focus,
+.choice--book a:hover, .choice--book a:focus,
+.choice--chapter a:hover, .choice--chapter a:focus {
+  background-color: #efefef;
+}
+
+.choice-sub {
+  font-size: .75em;
+  color: #777777;
+}
+
+.content--chapter p {
   font-size: 1.5em;
   line-height: 1.5em;
   font-family: serif;
 }
 
-.content--chapter .p sup {
+.content--chapter p.q1,
+.content--chapter p.q2,
+.content--chapter p.m {
+  margin: 0;
+}
+
+.content--chapter p sup {
   font-size: .5em;
 }
 
-.content--verse .p {
+.content--verse p {
   font-size: 2em;
   font-family: serif;
 }
 
-.content--verse .p sup {
+.content--verse p sup {
   display: none;
+}
+
+.content h3 {
+  margin: 2em 0 1em 0;
+  color: #767676;
+}
+
+.content p {
+  color: #454545;
 }
 
 sup, sub {
@@ -114,4 +221,33 @@ sup, sub {
 }
 sub {
   top: 0.75em;
+}
+
+.copy {
+  font-size: .5em;
+  color: #767676;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #767676;
+}
+
+.loading svg path,
+.loading svg rect{
+  fill: #767676;
 }

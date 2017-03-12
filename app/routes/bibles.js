@@ -7,6 +7,6 @@ export default Ember.Route.extend({
 
     return fetch(url)
       .then(response => response.json())
-      .then(json => json.response.versions);
+      .then(json => json.response);
   }
 });

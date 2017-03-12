@@ -5,8 +5,19 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
-    'esw-cache-fallback': {
-      patterns: ['/api/(.+)'],
+    'esw-index': {
+      version: '2'
+    },
+    'esw-cache-first': {
+      patterns: ['https://light-letters-api.herokuapp.com/api/(.+)'],
+      version: '2'
+    },
+    'asset-cache': {
+      patterns: [
+        'assets/**/*',
+        '**/*.png'
+      ],
+      version: '2'
     },
     'inlineContent': {
       'inline-css': {
