@@ -73,8 +73,20 @@ body {
 
 .content--index p,
 .content--index a {
+
   width: 100%;
   text-align: center;
+}
+
+.content--index a {
+  padding: .5em 1em;
+  border-radius: 6px;
+  margin: 2em auto;
+  display: block;
+  text-decoration: none;
+  color: #454545;
+  background-color: #dcdcdc;
+  max-width: 10em;
 }
 
 .nav {
