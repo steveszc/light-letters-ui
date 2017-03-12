@@ -71,8 +71,8 @@ body {
   flex-basis: 100%;
 }
 
-.page p,
-.page p + a {
+.content--index p,
+.content--index a {
   width: 100%;
   text-align: center;
 }
