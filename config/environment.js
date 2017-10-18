@@ -1,11 +1,13 @@
-/* jshint node: true */
+/* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'light-letters',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
+    historySupportMiddleware: true,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -43,7 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    // here you can enable a production-specific feature
   }
 
   return ENV;

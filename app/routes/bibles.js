@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import fetch from 'ember-network/fetch';
 
-export default Ember.Route.extend({
+export default Route.extend({
   model() {
     let url = 'https://light-letters-api.herokuapp.com/api/versions.js?language=eng-US';
 

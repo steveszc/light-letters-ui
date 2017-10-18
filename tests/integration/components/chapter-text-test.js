@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import { find } from 'ember-native-dom-helpers';
 
 moduleForComponent('chapter-text', 'Integration | Component | chapter text', {
   integration: true
@@ -13,6 +14,6 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{chapter-text text=text}}`);
 
-  assert.equal(this.$().text().trim(), 'bible verse');
+  assert.equal(find('div').textContent.trim(), 'bible verse');
 
 });

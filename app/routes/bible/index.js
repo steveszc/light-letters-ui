@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import { hash } from 'rsvp';
+import Route from '@ember/routing/route';
 import fetch from 'ember-network/fetch';
 
-export default Ember.Route.extend({
+export default Route.extend({
   model() {
     let url = `https://light-letters-api.herokuapp.com/api/versions/${this.paramsFor('bible').bible}/books.js`;
 
-    return Ember.RSVP.hash({
+    return hash({
       bible: this.modelFor('bible'),
       testaments: ['OT', 'DEUT', 'NT'],
       books: fetch(url)

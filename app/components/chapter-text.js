@@ -1,9 +1,10 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { get } from '@ember/object';
 
-export default Ember.Component.extend({
+export default Component.extend({
   click(e) {
     if (e.target.tagName === 'SPAN') {
-      this.get('pickVerse')(e.target.className.slice(e.target.className.lastIndexOf('_')+1));
+      get(this, 'pickVerse')(e.target.className.slice(e.target.className.lastIndexOf('_')+1));
     }
   }
 });
