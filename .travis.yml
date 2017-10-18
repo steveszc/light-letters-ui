@@ -25,11 +25,3 @@ install:
 
 script:
 - npm test
-
-deploy:
-  provider: heroku
-  api_key:
-    secure: cVJBbq7uPoQA8ZXRFZYMVVvxfrFJ04vhd+ldibvM9wVLrE8+rfwcH2iSY5BqiQEedDJqFNBKIvuknA+YADK7RxIEG+G96B/AIYjHPI83P9tPfcuVEbJFZhPOM5P10Zv7Z5KsCs1f00dZTNGeUpG2vjppK8D7wq4PJ+uEJgoTwplKoFAMU37XvjjaeP4RM3KYra67wWtpiHpoiSJD0gENKz5/LtFe7pPN0jv272j0UysigHC6/eU/46bV2/ZEgCnqmM3ETf+kTf6HwCWTfY5kBkcvh1qiJ687C7bl33KvsgjMFOuThdcueGbT15vs1dCvR5dQ15Mx0SHlNk+Glex4Kbh7rfhhx+a8XFhnhG3k9o9otWVqm4j0P2ivGpW0FAdRjirOpLyC+35ewD+MYtVFsiM44gEvotseyjHawzf/Ey1LXosG/4uXbldpti7q2A8D9w0qnCWR5EgiG67pEkiByArxv+f1ijk6APV0F9xDGkMXLzn/+apawzaZylnYKaR6EE8/Nhm+O9UUzEIhlfQm1524LanLC+AeNhFlJrseEnbiYKtv3nEQ+hCFDSavc+Feqh/7aStlRw65MCtpjDFYZjkWhsAxGvSRIuyxImpkZN5YddGUT3/do9niLEgvdCdbtvRbhIkZ66Xh/QkhUCOIAa2r/6Qf3DJFVJmn2AZJs7A=
-  app: light-letters
-  on:
-    repo: steveszc/light-letters-ui
