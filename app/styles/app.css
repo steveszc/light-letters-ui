@@ -240,6 +240,11 @@ sub {
   color: #767676;
 }
 
+/* red letters */
+span.wj {
+  color: indianred;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
