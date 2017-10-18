@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import fetch from 'ember-network/fetch';
 
-export default Ember.Route.extend({
+export default Route.extend({
   model(params) {
     let url = `https://light-letters-api.herokuapp.com/api/chapters/${this.paramsFor('bible').bible}:${this.paramsFor('bible.book').book}.${params.chapter}.js`;
 
